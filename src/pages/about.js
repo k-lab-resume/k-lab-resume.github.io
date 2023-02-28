@@ -12,5 +12,4 @@ const AboutPage = () => {
 };
 
 export const Head = () => <Seo title="About" />;
-
 export default AboutPage;

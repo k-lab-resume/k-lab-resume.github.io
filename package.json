@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "k-lab",
   "private": true,
   "version": "0.1.0",
   "dependencies": {
@@ -21,10 +21,6 @@
     "gatsby-transformer-sharp": "^5.7.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
   },
   "scripts": {
     "build": "gatsby build",

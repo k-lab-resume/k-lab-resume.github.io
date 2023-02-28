@@ -11,5 +11,4 @@ const NotFoundPage = () => {
 };
 
 export const Head = () => <Seo title="404: Not Found" />;
-
 export default NotFoundPage;

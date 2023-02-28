@@ -1,8 +1,7 @@
 import * as React from "react";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
-import Bio from "../components/bio";
 
 const BlogPostTemplate = ({ data: { markdownRemark: post }}) => {
   return (
@@ -13,17 +12,19 @@ const BlogPostTemplate = ({ data: { markdownRemark: post }}) => {
         itemType="http://schema.org/Article"
       >
         <header>
-          <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date} | {post.frontmatter.date}</p>
-          <p>{post.frontmatter.keywords}</p>
-          <p>{post.frontmatter.summary}</p>
+          <h1 id="top" itemProp="headline">{post.frontmatter.title}</h1>
+          <p>Created: {post.frontmatter.date} | Modified: {post.frontmatter.date}</p>
+          <p>Keywords: {post.frontmatter.keywords}</p>
         </header>
+        <div className="summary">
+            <p>{post.frontmatter.summary}</p>
+          </div>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />
       </article>
-      <Bio />
+      <p className="move"><Link to="#top">▲ Move to Top</Link></p>
     </Layout>
   )
 };

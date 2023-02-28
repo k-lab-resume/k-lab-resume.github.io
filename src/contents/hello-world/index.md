@@ -3,7 +3,11 @@ title: Hello World
 date: "2015-05-01T22:12:03.284Z"
 update: "2023-01-01"
 keywords: "Sociology"
-summary: "Hello World"
+summary: "This is my first post on my new fake blog! How exciting!
+
+I'm sure I'll write a lot more interesting things in the future.
+
+Oh, and here's a great quote from this Wikipedia on"
 ---
 
 This is my first post on my new fake blog! How exciting!

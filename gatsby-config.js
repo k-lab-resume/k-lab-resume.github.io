@@ -66,7 +66,7 @@ module.exports = {
       options: {
         name: `K-Lab`,
         short_name: `K-Lab`,
-        start_url: `/home`,
+        start_url: `/`,
         background_color: `#fff`,
         theme_color: `#000`,
         display: `minimal-ui`,
