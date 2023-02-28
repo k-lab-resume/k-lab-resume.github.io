@@ -4,15 +4,15 @@ import { Link } from "gatsby";
 const Layout = ({ children }) => {
   return (
     <>
-      <div className="global-nav">
+      <section className="global-nav">
           <p><Link to="/">K-Lab</Link></p>
-          <p>Contact</p>
-      </div>
-      <div className="global-wrapper">{children}</div>
-      <div className="global-nav">
+          <p><Link to="/policy/#contact">Contact</Link></p>
+      </section>
+      <section className="global-wrapper">{children}</section>
+      <section className="global-nav">
         <p>© {new Date().getFullYear()}</p>
         <p><Link to="/policy">Terms&Privacy</Link></p>
-      </div>
+      </section>
     </>
   )
 };

@@ -9,6 +9,7 @@ const PolicyPage = () => {
       <h2>Privacy Policy</h2>
       <h2>Terms</h2>
       <h2>Licence</h2>
+      <h2 id="contact">Contact</h2>
     </Layout>
   )
 };

@@ -9,6 +9,7 @@ const DocumentPage = ({ data }) => {
   return (
     <Layout>
       <h1>Documents</h1>
+      <hr />
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug

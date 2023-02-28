@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 const LandingPage = () => {
   return (
     <div>
-      <h1><Link to="/home">Gatsby Starter Blog</Link></h1>
+      <h1><Link to="/">K-Lab</Link></h1>
       <p>LandingPage</p>
     </div>
   )
