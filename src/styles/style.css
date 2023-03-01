@@ -13,9 +13,10 @@
   --fontSize-4: 1.8rem;
   --fontSize-5: 2.0rem;
   --fontSize-6: 2.5rem;
-  --color-text: #454442;
-  --color-heading: #373333;
-  --color-accent: #d1dce5;
+  --color-primary: #436766;
+  --color-text: #454442; /* #4c4e4d */
+  --color-heading: #373333; /* #444745 */
+  --color-accent: #dcdcdc; /* #e1e1e1 */
 }
 
 *, :after, :before {
@@ -116,6 +117,8 @@ a {
   text-decoration: underline;
 }
 
+
+/* layout.js */
 .global-nav {
   padding: 1.25rem;
   font-weight: var(--fontWeight-bold);
@@ -140,8 +143,11 @@ a {
   margin-top: 1rem;
 }
 
+
+/* documents.js */
 .post-list-item h2 {
   font-size: var(--fontSize-4);
+  color: var(--color-primary);
   margin-bottom: 0.5rem;
   margin-top: 0;
 }
@@ -150,6 +156,8 @@ a {
   margin-bottom: 1rem;
 }
 
+
+/* blog-post.js */
 .blog-post header h1 {
   margin-top: 1rem;
 }
@@ -194,11 +202,22 @@ a {
   text-decoration: none;
 }
 
+/* 404.js */
 .error {
   text-align: center;
   font-size: var(--fontSize-3);
 }
 
+
+/* index.js */
+.landing {
+width: 100%;
+height: 100vh;
+padding: 0.5rem;
+}
+
+
+/* Media Query */
 @media (max-width: 42rem) {
   ul, ol {
     list-style-position: inside;
