@@ -1,5 +1,6 @@
 import * as React from "react";
 import { graphql, Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 
@@ -25,6 +26,13 @@ const BlogPostTemplate = ({ data: { markdownRemark: post }}) => {
         />
       </article>
       <p className="move"><Link to="#top">▲ Move to Top</Link></p>
+      <StaticImage
+      src="./bio.png"
+      alt="bio"
+      placeholder="blurred"
+      width={1050}
+      height={450}
+      />
     </Layout>
   )
 };

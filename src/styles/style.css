@@ -9,8 +9,8 @@
     "Noto Color Emoji";
   --fontWeight-normal: 400;
   --fontWeight-bold: 700;
-  --fontSize-3: 1.4rem;
-  --fontSize-4: 1.8rem;
+  --fontSize-3: 1.2rem;
+  --fontSize-4: 1.5rem;
   --fontSize-5: 2.0rem;
   --fontSize-6: 2.5rem;
   --color-primary: #436766;
@@ -49,7 +49,7 @@ hr {
 
 h1, h2, h3, h4 {
   font-family: var(--fontFamily);
-  margin-top: 3rem;
+  margin-top: 2rem;
   margin-bottom: 1.5rem;
   line-height: 1.1;
   letter-spacing: -0.025em;
@@ -120,9 +120,9 @@ a {
 
 /* layout.js */
 .global-nav {
-  padding: 1.25rem;
+  padding: 0.5rem 6rem;
   font-weight: var(--fontWeight-bold);
-  font-size: var(--fontSize-3);
+  font-size: var(--fontSize-4);
   color: #111;
   display: flex;
   justify-content: space-between;
@@ -146,7 +146,7 @@ a {
 
 /* documents.js */
 .post-list-item h2 {
-  font-size: var(--fontSize-4);
+  font-size: 1.8rem;
   color: var(--color-primary);
   margin-bottom: 0.5rem;
   margin-top: 0;
@@ -208,17 +208,16 @@ a {
   font-size: var(--fontSize-3);
 }
 
-
 /* index.js */
-.landing {
-width: 100%;
-height: 100vh;
-padding: 0.5rem;
+.home {
+  text-align: center;
 }
-
 
 /* Media Query */
 @media (max-width: 42rem) {
+  .global-nav {
+    padding: 0 1.25rem;
+  }
   ul, ol {
     list-style-position: inside;
   }
